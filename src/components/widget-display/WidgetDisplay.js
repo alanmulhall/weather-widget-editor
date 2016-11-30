@@ -2,12 +2,12 @@ import React, {Component, PropTypes} from 'react';
 import './WidgetDisplay.css';
 
 class WidgetDisplay extends Component {
-	static propTypes = {
+  static propTypes = {
     weatherWidgetId: PropTypes.string,
     title: PropTypes.string,
     unit: PropTypes.string,
     wind: PropTypes.bool
-	}
+  }
 
 	constructor(props) {
 		super(props);

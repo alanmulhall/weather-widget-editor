@@ -20,11 +20,4 @@ const RenderField = ({input, placeholder, label, type, meta: {touched, error}}) 
 
 RenderField.propTypes = propTypes;
 
-//input = Object {name: "title", value: ""}
-//placeholder = "enter a title"
-//label = ""
-//type = "text"
-//meta = Object
-//touched = false
-//error = "Required"
 export default RenderField;

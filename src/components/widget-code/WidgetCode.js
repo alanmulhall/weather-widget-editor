@@ -11,7 +11,7 @@ const propTypes = {
 }
 
 const WidgetCode = ({weatherWidgetId, title, unit, wind}) => {
-	const code = codeSnippet(weatherWidgetId, title, unit, wind);
+  const code = codeSnippet(weatherWidgetId, title, unit, wind);
   return (
     <div className="widget-code">
       <Highlight className='javascript'>

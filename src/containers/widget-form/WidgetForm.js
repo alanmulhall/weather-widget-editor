@@ -6,12 +6,12 @@ import {newWidget} from '../../actions/actionCreators';
 import './WidgetForm.css';
 
 class WidgetForm extends Component {
-	static propTypes = {
-		dispatch: PropTypes.func,
-		handleSubmit: PropTypes.func,
-		submitting: PropTypes.bool,
-		pristine: PropTypes.bool
-	}
+  static propTypes = {
+    dispatch: PropTypes.func,
+    handleSubmit: PropTypes.func,
+    submitting: PropTypes.bool,
+    pristine: PropTypes.bool
+  }
 
 	componentDidMount() {
 		const initData = {

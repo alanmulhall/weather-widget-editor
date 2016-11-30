@@ -5,7 +5,7 @@ import uuid from 'uuid';
 import './WidgetItem.css';
 
 const WidgetItem = (props) => {
-	const weatherWidgetId = uuid();
+  const weatherWidgetId = uuid();
   return (
     <div className="widget-item">
       <WidgetDisplay {...props} weatherWidgetId={weatherWidgetId} />

@@ -11,7 +11,6 @@ const propTypes = {
 
 class Application extends Component {
   render() {
-		//console.log(`Application render called ${JSON.stringify(this.props)}`);
     return (
       <div className="widget-editor-container">
 				<div className="widget-editor">
