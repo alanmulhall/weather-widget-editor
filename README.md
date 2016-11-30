@@ -1,4 +1,6 @@
-### Weather Widget Editor
+## Weather Widget Editor
+
+A editor which allows a user to create weather widgets.
 
 #### Install and Run
 1. `npm install`
