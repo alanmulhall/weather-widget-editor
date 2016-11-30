@@ -6,9 +6,7 @@ import {getDataFromLocalstorage} from './actions/actionCreators';
 import configureStore from './store/configureStore';
 
 const store = configureStore();
-//console.log('INITIAL STORE STATE', store.getState());
 store.dispatch(getDataFromLocalstorage());
-//console.log('AFTER LOCALSTORAGE STORE STATE', store.getState());
 
 class App extends Component {
   render() {
