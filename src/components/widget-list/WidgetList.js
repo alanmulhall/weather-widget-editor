@@ -1,8 +1,7 @@
 import React from 'react';
 import WidgetItem from '../widget-item/WidgetItem';
 
-const WidgetList = (props) => {
-  const {widgets} = props;
+const WidgetList = ({widgets}) => {
   return (
     <div className="widget-list">
       {
