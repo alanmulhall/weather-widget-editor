@@ -1,0 +1,9 @@
+.widget-code {
+  display: inline-block;
+  width: 100%;
+}
+
+.widget-code pre {
+  margin: 0;
+  text-align: left;
+}
