@@ -2,7 +2,7 @@
   "dontLoad": [
     "node_modules/**"
   ],
-	"libs": [
+  "libs": [
     "browser"
   ],
   "loadEagerly": [
@@ -10,5 +10,5 @@
   ],
   "plugins": {
   },
-	"ecmaVersion": 6
+  "ecmaVersion": 6
 }
