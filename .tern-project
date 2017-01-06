@@ -1,0 +1,14 @@
+{
+  "dontLoad": [
+    "node_modules/**"
+  ],
+	"libs": [
+    "browser"
+  ],
+  "loadEagerly": [
+    "src/**/*.js"
+  ],
+  "plugins": {
+  },
+	"ecmaVersion": 6
+}

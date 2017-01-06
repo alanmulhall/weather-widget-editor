@@ -5,11 +5,11 @@ const widgets = (state = [], action) => {
   switch(action.type) {
     case types.GET_DATA_FROM_LOCALSTORAGE:
 			if (action.data && action.data.widgets) {
-				newState = state.concat(action.data.widgets);
+        newState = [...action.data.widgets, ...state];
 			}
 			return newState || state;
 		case types.NEW_WIDGET:
-      return [...state, action.data];
+      return [action.data, ...state];
     default:
       return state;
     }

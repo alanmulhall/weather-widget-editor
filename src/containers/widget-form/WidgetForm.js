@@ -22,8 +22,9 @@ class WidgetForm extends Component {
 	}
 
 	handleSubmit = (e) => {
-		const {dispatch} = this.props;
+		const {dispatch, reset} = this.props;
 		dispatch(newWidget(e));
+    reset();
 	}
 
 	render() {
