@@ -21,7 +21,6 @@ const localstorage = {
     if (isAvailable) {
       return localStorage.setItem(key, JSON.stringify(value));
     }
-
     return null;
   },
 };

@@ -21,16 +21,16 @@ class WidgetForm extends Component {
 		return this.props.initialize(initData);
 	}
 
-	handleSubmit = (e) => {
+	handleSubmit(e) {
 		const {dispatch, reset} = this.props;
 		dispatch(newWidget(e));
-    reset();
+    return reset();
 	}
 
 	render() {
 		const {handleSubmit, submitting, pristine} = this.props;
 		return (
-			<form className="widget-form" onSubmit={handleSubmit(this.handleSubmit.bind(this))}>
+			<form className="widget-form" onSubmit={handleSubmit(e => this.handleSubmit(e))}>
 				<Field name="title" type="text" component={RenderField} label="" placeholder="enter a title" />
 				<label>which unit of measurement would you like?</label>
 				<Field name="unit" component="select">

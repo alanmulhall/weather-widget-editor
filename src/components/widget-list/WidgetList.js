@@ -5,9 +5,7 @@ const WidgetList = ({widgets}) => {
   return (
     <div className="widget-list">
       {
-        widgets && widgets.length > 0 && widgets.map((widget, i) => {
-          return <WidgetItem {...widget} key={widget.id} />
-        })
+        widgets && widgets.length > 0 && widgets.map(widget => <WidgetItem {...widget} key={widget.id} />)
       }
     </div>
   );

@@ -5,11 +5,11 @@ import WidgetForm from '../widget-form/WidgetForm';
 import WidgetList from '../../components/widget-list/WidgetList';
 import './Application.css';
 
-const propTypes = {
-  dispatch: PropTypes.func.isRequired
-}
-
 class Application extends Component {
+  static propTypes = {
+    dispatch: PropTypes.func.isRequired
+  };
+
   render() {
     return (
       <div className="widget-editor-container">
@@ -22,8 +22,6 @@ class Application extends Component {
     );
   }
 };
-
-Application.propTypes = propTypes;
 
 function mapStateToProps(state) {
   return state;

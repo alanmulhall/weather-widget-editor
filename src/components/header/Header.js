@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header>
       <h1 className="header">
-        Create a Weather Widget
+        Weather Widget
       </h1>
     </header>
   );
