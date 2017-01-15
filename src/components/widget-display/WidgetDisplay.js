@@ -3,7 +3,7 @@ import './WidgetDisplay.css';
 
 class WidgetDisplay extends Component {
   static propTypes = {
-    weatherWidgetId: PropTypes.string,
+    id: PropTypes.string,
     title: PropTypes.string,
     unit: PropTypes.string,
     wind: PropTypes.bool
@@ -11,8 +11,8 @@ class WidgetDisplay extends Component {
 
 	constructor(props) {
 		super(props);
-		const {weatherWidgetId, title, unit, wind} = props;
-		this.weatherWidgetId = weatherWidgetId;
+		const {id, title, unit, wind} = props;
+		this.id = id;
 		this.title = title;
 		this.unit = unit;
 		this.wind = wind;
@@ -22,7 +22,7 @@ class WidgetDisplay extends Component {
 			(() => {
 				const widget = new WeatherWidget.default({title: '${this.title}', units: '${this.unit}', showWind: ${this.wind}});
 				widget.then(data => {
-					let host = document.getElementById('${this.weatherWidgetId}').createShadowRoot();
+					let host = document.getElementById('${this.id}').createShadowRoot();
 					host.innerHTML = data;
 				});
 			})()
@@ -35,7 +35,7 @@ class WidgetDisplay extends Component {
 	render() {
 		return (
 			<div className="widget-display">
-				<div id={this.weatherWidgetId}></div>
+				<div id={this.id}></div>
 			</div>
 		);
 	}

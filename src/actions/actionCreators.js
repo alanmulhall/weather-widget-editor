@@ -1,7 +1,6 @@
 import localstorage from '../utils/localStorageUtils';
 import * as types from '../constants/actionTypes';
-import uuid from 'uuid';
-import shortid from 'shortid';
+import cuid from 'cuid';
 
 export const getDataFromLocalstorage = () => {
   const widgets = localstorage.get('widgets');
@@ -12,10 +11,9 @@ export const getDataFromLocalstorage = () => {
 };
 
 export const newWidget = widget => {
-  const id = shortid.generate();
-  const weatherWidgetId = uuid();
+  const id = cuid();
   const widgets = localstorage.get('widgets') || [];
-  const newWidget = {...widget, weatherWidgetId, id};
+  const newWidget = {...widget, id};
   localstorage.set('widgets', [newWidget, ...widgets]);
   return {
     type: types.NEW_WIDGET,

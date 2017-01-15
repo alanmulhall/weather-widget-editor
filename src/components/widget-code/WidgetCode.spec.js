@@ -6,15 +6,15 @@ import WidgetCode from './WidgetCode';
 describe('<WidgetCode />', () => {
   context('props', () => {
     const props = {
-      weatherWidgetId: '13004963-008e-4d2d-aae6-55cb854ff79c',
+      id: '13004963',
       title: 'my first widget',
       unit: 'imperial',
       wind: false
     };
 
-    it('has the prop weatherWidgetId defined', () => {
+    it('has the prop id defined', () => {
       const widgetCode = shallow(<WidgetCode {...props} />);
-      expect(widgetCode.props.weatherWidgetId).to.be.defined;
+      expect(widgetCode.props.id).to.be.defined;
     });
 
     it('has the prop title defined', () => {
