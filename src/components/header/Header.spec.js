@@ -11,6 +11,6 @@ describe('<Header />', () => {
 
   it('has the correct title', () => {
     const header = shallow(<Header />);
-    expect(header.contains('Create a Weather Widget')).to.equal(true);
+    expect(header.contains('Weather Widget')).to.equal(true);
   });
 });
